@@ -250,35 +250,29 @@ GIT_TRACE_PERFORMANCE=true git gc
 
 
 
+========================
+问题：
+
+https://docs.github.com/zh/authentication/troubleshooting-ssh/error-permission-denied-publickey
 
 
+解决ssh -T测试成功，但是git push失败的问题
+
+PS E:\prj\data-analysis> ssh -vT git@github.com
+OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+debug1: Connecting to github.com [20.205.243.166] port 22.
+debug1: Connection established.
+debug1: identity file C:\\Users\\testuser/.ssh/id_rsa type -1
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ssh -vT git@github.com
+sh -vT git@github.com
+OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2
+debug1: Connecting to github.com [20.205.243.166] port 22.
+debug1: Connection established.
+debug1: identity file C:\\Users\\testuser/.ssh/id_rsa type 0
+debug1: identity file C:\\Users\\testuser/.ssh/id_rsa-cert type -1
+debug1: identity file C:\\Users\\testuser/.ssh/id_ecdsa type -1
 
 
 
